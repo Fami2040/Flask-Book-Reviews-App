@@ -423,7 +423,7 @@ def getbookpage(isbn):
         good_reads_rate_count = None
         try:
             import requests
-            res = requests.get(f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key=AIzaSyCq4YjdyQSiKxGoovJVNnwWdCfaXYNJQpo")
+            res = requests.get(f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key=please put your api key")
             res = res.json()
 
             if res["totalItems"] != 0:
